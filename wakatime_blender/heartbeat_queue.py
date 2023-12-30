@@ -118,6 +118,8 @@ class HeartbeatQueue(threading.Thread):
             f"{heartbeat.timestamp:f}",
             "--plugin",
             ua,
+            "--category",
+            "designing"
         ]
         props = WakatimeProjectProperties.instance()
         if props and props.always_overwrite_name:
